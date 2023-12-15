@@ -1,0 +1,51 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Практическое обучение
+    body
+        header.header
+            .wrapper
+                h1.headerText Практическое обучение. Базовая часть
+        main.main
+            section.runnerBlock
+                .wrapper
+                    h2 Бегунок
+                    #rangeSlider.rangeSlider
+            section.sliderBlock
+                .wrapper
+                    h2 Слайдер
+                    .slider
+                        .slider__content
+                            .slider__content--swiper
+                                #swiper.swiper.__swiper
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            img(src='./images/png/image_slider1.png' alt='image1')
+                                        .swiper-slide
+                                            img(src='./images/png/image_slider2.png' alt='image2')
+                                        .swiper-slide
+                                            img(src='./images/png/image_slider3.png' alt='image3')
+                            .slider__description
+                                .slider__info
+                                    .slider__info--item
+                                        p.slider__info--text
+                                            | Выбранный слайд:
+                                            span#selected_slide
+                                    .slider__info--item
+                                        p.slider__info--text
+                                            | Всего слайдов:
+                                            span#total_slides
+                                .slider__info--tools
+                                    .slider__tools--element
+                                        button.arrow_prev.slider__tools--btn
+                                            img(src='./images/svg/sliderArrowLeft.svg' alt='button prev')
+                                    .slider__tools--element
+                                        button.arrow_next.slider__tools--btn
+                                            img(src='./images/svg/sliderArrowRight.svg' alt='button next')
+
+            section.yamapBlock
+                .wrapper
+                    h2 Карта
+                    .yandexMap__inner(id="yandexMap" data-center="55.163157, 61.411287" data-home="55.165889, 61.412026" data-user="55.160548, 61.422543" data-work="55.163266, 61.404827")
